@@ -9,15 +9,14 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 })
+export const getPolicies = () => api.get('/api/policies')
+export const getPolicy = (id) => api.get(`/api/policies/${id}`)
+export const createPolicy = (policy) => api.post('/api/policies', policy)
+export const getImpactAnalysis = (id) => api.get(`/api/policies/${id}/impact`)
+export const predictRisk = (id) => api.post(`/api/policies/${id}/predict-risk`)
+export const getRecommendations = (id) => api.get(`/api/policies/${id}/recommendations`)
+export const getExecutiveReport = (id) => api.get(`/api/policies/${id}/report`)
+export const getDashboardMetrics = () => api.get('/api/dashboard/metrics')
 
-
-export const getPolicies = () => api.get('/policies')
-export const getPolicy = (id) => api.get(`/policies/${id}`)
-export const createPolicy = (policy) => api.post('/policies', policy)
-export const getImpactAnalysis = (id) => api.get(`/policies/${id}/impact`)
-export const predictRisk = (id) => api.post(`/policies/${id}/predict-risk`)
-export const getRecommendations = (id) => api.get(`/policies/${id}/recommendations`)
-export const getExecutiveReport = (id) => api.get(`/policies/${id}/report`)
-export const getDashboardMetrics = () => api.get('/dashboard/metrics')
 
 export default api
