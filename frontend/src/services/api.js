@@ -2,7 +2,7 @@ import axios from 'axios'
 from fastapi.middleware.cors import CORSMiddleware
 
 // Change from local to your Render backend URL
-const API_BASE_URL = "https://policy-api.onrender.com"
+const API_BASE_URL = "https://policy-impact-risk-analytics-platform-api.onrender.com"
 
 const api = axios.create({
   baseURL: API_BASE_URL,
