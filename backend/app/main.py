@@ -23,7 +23,7 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173", "https://policy-frontend.fly.dev"],
+    allow_origins=["http://localhost:3000", "http://localhost:5173", "https://policy-impact-risk-analytics-platform.onrender.com","https://*.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
