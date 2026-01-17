@@ -1,0 +1,45 @@
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s;
+}
+
+.activity-item:hover {
+  background-color: #f3f4f6;
+}
+
+.activity-icon {
+  font-size: 1.5rem;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-title {
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.activity-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.activity-action {
+  font-weight: 500;
+}
